@@ -13,7 +13,7 @@ import os
 txt_file = open("Intermediate/my_file.txt", "w+")
 
 txt_file.write(
-    "Mi nombre es Brais\nMi apellido es Moure\n35 años\nY mi lenguaje preferido es Python")
+    "Mi nombre es Laura\nMi apellido es Perez\n27 años\nY mi lenguaje preferido es Python")
 
 # print(txt_file.read())
 print(txt_file.read(10))
@@ -40,9 +40,9 @@ with open("Intermediate/my_file.txt", "a") as my_other_file:
 json_file = open("Intermediate/my_file.json", "w+")
 
 json_test = {
-    "name": "Brais",
-    "surname": "Moure",
-    "age": 35,
+    "name": "Laura",
+    "surname": "Perez",
+    "age": 27,
     "languages": ["Python", "Swift", "Kotlin"],
     "website": "https://moure.dev"}
 
@@ -66,7 +66,7 @@ csv_file = open("Intermediate/my_file.csv", "w+")
 
 csv_writer = csv.writer(csv_file)
 csv_writer.writerow(["name", "surname", "age", "language", "website"])
-csv_writer.writerow(["Brais", "Moure", 35, "Python", "https://moure.dev"])
+csv_writer.writerow(["Laura", "Perez", 27, "Python", "https://moure.dev"])
 csv_writer.writerow(["Roswell", "", 2, "COBOL", ""])
 
 csv_file.close()
